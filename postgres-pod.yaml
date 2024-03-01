@@ -11,6 +11,16 @@ spec:
     image: postgres
     ports:
     - containerPort: 5432
-    
-
+    env:
+      - name: POSTGRES_USER
+        valueFrom:
+          secretKeyRef:
+            name: postgres-secret  
+            key: username           
+      - name: POSTGRES_PASSWORD
+        valueFrom:
+          secretKeyRef:
+            name: postgres-secret 
+            key: password          
+            
 # 5432 is default container port for postgres
