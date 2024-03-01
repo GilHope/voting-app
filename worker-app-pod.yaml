@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: worker-app-pod
+  labels:
+    name: worker-app-pod
+    app: demo-voting-app
+spec:
+  containers:
+  - name: worker-app
+    image: kodekloud/examplevotingapp_worker:v1
+
+
+# Create the worker-app pod
+# ``kubectl create -f worker-app-pod.yaml``
+
+# Verify the worker-app pod
+# ``kubectl get pods``
+
+# Verify the worker-app pod details
+# ``kubectl describe pod worker-app-pod``
+
+# Verify the worker-app pod logs
+# ``kubectl logs worker-app-pod``
+
+# Delete the worker-app pod
+# ``kubectl delete pod worker-app-pod``
