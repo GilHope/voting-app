@@ -1,4 +1,9 @@
 # Failing currently
+# The error message from the worker-app-pod logs, 
+# System.NotSupportedException: Authentication method not supported (Received: 10), 
+# indicates that the Npgsql library used by your worker application 
+# does not support the SCRAM-SHA-256 authentication method required by the 
+# PostgreSQL database it is trying to connect to.
 
 apiVersion: v1
 kind: Pod
