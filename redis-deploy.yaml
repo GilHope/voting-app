@@ -11,6 +11,7 @@ spec:
     matchLabels:
       name: redis-pod
       app: demo-voting-app
+      
   template:
     metadata:
       name: redis-pod
