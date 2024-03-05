@@ -1,3 +1,4 @@
 postgres-pod.yaml
+postgres-deploy.yaml
 
 example-voting-app-kubernetes-v2/
